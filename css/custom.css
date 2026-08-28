@@ -442,6 +442,47 @@ nav ul li a.active {
   visibility: visible;
 }
 
+/* Centrage vertical + horizontal des blocs de section (projets, à propos, compétences) */
+.slide .content.center-panel {
+  display: flex;
+}
+
+.center-panel > .center-inner {
+  width: 100%;
+  margin: auto;
+}
+
+/* ==========================================================================
+   Compétences — bloc centré verticalement + horizontalement, grille responsive
+   ========================================================================== */
+.slide .content.skills-panel {
+  display: flex;
+}
+
+.skills-panel .skills-inner {
+  width: 100%;
+  max-width: 78rem;
+  margin: auto;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* ==========================================================================
    Lightbox <dialog>
    ========================================================================== */

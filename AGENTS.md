@@ -18,7 +18,7 @@ POUR QUE LE SITE SOIT UN PORTFOLIO DÉVELOPPEUR WEB IL FAUT AJOUTER DEUX SECTION
 1. La section "About" : doit contenir les informations suivantes :
 
 Nom complet
-Titre : "Développeur Web Junior — À la recherche d'une alternance CDA  / Ingénieurie du Web (Reims)"
+Titre : "Développeur Web Junior — À la recherche d'une alternance CDA  / Ingénierie du Web (Reims)"
 Phrase d'accroche courte
 2 boutons CTA : "Voir mes projets" (#projects) et "Me contacter" (#contact)
 2. La section "Projets" : doit contenir les informations suivantes :
@@ -135,7 +135,7 @@ Bouton toggle thème en bas de la sidebar
 Sur mobile : barre horizontale en haut avec menu hamburger
 Hero
 <h1> avec nom du développeur
-Sous-titre : "Développeur Web — À la recherche d'une alternance CDA / Ingénieurie du Web (Reims)"
+Sous-titre : "Développeur Web — À la recherche d'une alternance CDA / Ingénierie du Web (Reims)"
 Phrase d'accroche courte
 2 boutons CTA : "Voir mes projets" (#projects) et "Me contacter" (#contact)
 Grille Projets (cœur — esprit galerie Moonlight)
@@ -157,7 +157,7 @@ Listes simples avec icônes subtiles
 Contact
 Liens : mailto, LinkedIn, GitHub
 Localisation : "Reims, Grand-Est, France"
-Mention : "Disponible pour une alternance CDA / Ingénieurie du Web — mobile 30 km autour de Reims"
+Mention : "Disponible pour une alternance CDA / Ingénierie du Web — mobile 30 km autour de Reims"
 Thème jour/nuit — Implémentation
 <meta name="color-scheme" content="light dark"> dans le <head>
 Script inline dans <head> (avant le CSS) pour appliquer le choix sauvegardé en localStorage → zéro flash
@@ -165,8 +165,8 @@ CSS utilise prefers-color-scheme comme défaut + classe .dark / .light sur <html
 Toggle accessible : <button> avec aria-label, icône SVG soleil/lune
 Persistance dans localStorage("color-scheme")
 SEO / JSON-LD
-<title> : "Développeur Web Junior à Reims — Alternance Concepteur Développeur d'Applications / Ingénieurie du Web"
-<meta description> orientée local + CDA + Ingénieurie du Web
+<title> : "Développeur Web Junior à Reims — Alternance Concepteur Développeur d'Applications / Ingénierie du Web"
+<meta description> orientée local + CDA + Ingénierie du Web
 Open Graph + Twitter Card
 JSON-LD : Person + WebSite
 sitemap.xml et robots.txt statiques

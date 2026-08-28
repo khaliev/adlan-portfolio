@@ -4,11 +4,21 @@
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
 
-  fetch('data/projects.json')
-    .then(function (res) {
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      return res.json();
-    })
+  function loadProjects() {
+    var inline = document.getElementById('projects-data');
+    if (inline && inline.textContent) {
+      try {
+        return Promise.resolve(JSON.parse(inline.textContent));
+      } catch (e) { /* JSON invalide -> fallback fetch */ }
+    }
+    return fetch('data/projects.json')
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      });
+  }
+
+  loadProjects()
     .then(function (projects) {
       projects.sort(function (a, b) {
         return (b.featured === true) - (a.featured === true);

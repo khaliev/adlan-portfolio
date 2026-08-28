@@ -476,7 +476,7 @@ nav ul li a.active {
   width: calc(100% - var(--sidebar-w));
   height: 100%;
   overflow-y: auto;
-  padding: 4rem clamp(1.5rem, 5vw, 5rem) 8rem;
+  padding: 4rem clamp(1.5rem, 5vw, 5rem) 11rem;
 }
 
 /* Scrollbar (rappel Moonlight) */
@@ -551,6 +551,14 @@ nav ul li a.active {
   color: var(--c-text);
   padding-bottom: 0.45rem;
   border-bottom: 3px solid var(--c-accent);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Titres de section : angles de la bordure accent arrondis */
+.slide .content h2 {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .hero-tagline {
@@ -630,8 +638,8 @@ nav ul li a.active {
    ========================================================================== */
 .projects-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
 
 .project-card {
@@ -651,7 +659,7 @@ nav ul li a.active {
 .project-card img {
   display: block;
   width: 100%;
-  height: 15rem;
+  height: 12rem;
   object-fit: cover;
 }
 
@@ -890,7 +898,7 @@ dialog#project-lightbox::backdrop {
 
   .slide .content {
     padding-top: calc(56px + 2rem);
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
   }
 
   .footer {
@@ -995,7 +1003,7 @@ dialog#project-lightbox::backdrop {
         <div class="content center-panel">
           <div class="max-w-5xl mx-auto center-inner">
             <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--c-text)] border-b-2 border-[var(--c-accent)] inline-block pb-2 mb-2">Projets</h2>
-            <p class="text-[var(--c-muted)] mb-10 max-w-2xl">Une sélection de mes réalisations. Survolez un projet pour en voir les détails, ou cliquez pour l'ouvrir.</p>
+            <p class="text-[var(--c-muted)] mb-6 max-w-2xl">Une sélection de mes réalisations. Survolez un projet pour en voir les détails, ou cliquez pour l'ouvrir.</p>
 
             <div id="projects-grid" class="projects-grid"></div>
           </div>
@@ -1035,12 +1043,12 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
       <section class="slide" id="skills">
         <div class="content skills-panel">
           <div class="skills-inner">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--c-text)] border-b-2 border-[var(--c-accent)] inline-block pb-2 mb-10">Compétences</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--c-text)] border-b-2 border-[var(--c-accent)] inline-block pb-2 mb-8">Compétences</h2>
 
             <div class="skills-grid">
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">Frontend</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">Frontend</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>HTML5</li>
                   <li>CSS3</li>
                   <li>JavaScript</li>
@@ -1049,8 +1057,8 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
                 </ul>
               </div>
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">Backend — bases</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">Backend — bases</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>Node.js</li>
                   <li>Express</li>
                   <li>API REST</li>
@@ -1059,8 +1067,8 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
                 </ul>
               </div>
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">Base de données — bases</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">Base de données — bases</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>SQL</li>
                   <li>MySQL</li>
                   <li>Requêtes CRUD</li>
@@ -1068,8 +1076,8 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
                 </ul>
               </div>
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">SEO, GEO &amp; performance — bases</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">SEO, GEO &amp; performance — bases</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>Audits Lighthouse</li>
                   <li>SEO technique de base</li>
                   <li>HTML sémantique</li>
@@ -1078,8 +1086,8 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
                 </ul>
               </div>
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">IA &amp; développement assisté</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">IA &amp; développement assisté</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>OpenCode &amp; Antigravity</li>
                   <li>Cadrage du contexte projet</li>
                   <li>Source de vérité projet</li>
@@ -1088,8 +1096,8 @@ Je cherche à transformer mes bases en compétences professionnelles solides, en
                 </ul>
               </div>
               <div class="p-6 rounded-xl bg-[var(--c-surface)] border border-[var(--c-border)]">
-                <h3 class="font-bold text-[var(--c-accent)] mb-4">Outils, qualité &amp; méthodes</h3>
-                <ul class="space-y-2 text-sm text-[var(--c-text)]">
+                <h3 class="font-bold text-[var(--c-accent)] mb-3">Outils, qualité &amp; méthodes</h3>
+                <ul class="space-y-1.5 text-sm text-[var(--c-text)]">
                   <li>Git &amp; GitHub</li>
                   <li>VS Code / Antigravity</li>
                   <li>npm</li>

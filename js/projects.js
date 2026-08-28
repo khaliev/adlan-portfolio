@@ -51,7 +51,7 @@
     overlay.className = 'hover-effect';
 
     const inner = document.createElement('div');
-    inner.className = 'text-center px-6 py-4';
+    inner.className = 'text-center px-7 py-6';
 
     const h3 = document.createElement('h3');
     h3.className = 'text-lg font-bold uppercase tracking-wide border-b border-white/60 inline-block pb-2 mb-3';
